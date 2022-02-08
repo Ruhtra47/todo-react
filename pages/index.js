@@ -53,7 +53,6 @@ export default function Home() {
 
     setTasks([...tasks, task]);
     setTitle("");
-    SetData();
   }
 
   return (

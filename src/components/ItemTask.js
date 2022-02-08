@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import closeImage from "../images/close.png";
+import deleteImage from "./delete.png";
 
 function ItemTask(props) {
   const [checked, setChecked] = React.useState(props.taskAtual.done);
@@ -33,7 +33,7 @@ function ItemTask(props) {
         />
         <p>{props.taskAtual.title}</p>
         <img
-          src={closeImage}
+          src="https://cdn.discordapp.com/attachments/923258207781146684/940610958240399370/delete.png"
           style={{
             width: "20px",
             height: "20px",
