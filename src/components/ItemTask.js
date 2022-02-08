@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import closeImage from "../images/close.png";
+
 function ItemTask(props) {
   const [checked, setChecked] = React.useState(props.taskAtual.done);
 
@@ -31,7 +33,7 @@ function ItemTask(props) {
         />
         <p>{props.taskAtual.title}</p>
         <img
-          src="https://cdn-icons.flaticon.com/png/512/3138/premium/3138336.png?token=exp=1643556153~hmac=23c2887ea8ece3ed4cacfc1ea3a4853f"
+          src={closeImage}
           style={{
             width: "20px",
             height: "20px",
