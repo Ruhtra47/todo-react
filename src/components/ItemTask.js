@@ -33,7 +33,7 @@ function ItemTask(props) {
           checked={checked}
         />
         <p key={props.taskAtual.id}>{props.taskAtual.title}</p>
-        <Image
+        <img
           key={props.taskAtual.id}
           src="https://cdn.discordapp.com/attachments/923258207781146684/940610958240399370/delete.png"
           style={{
