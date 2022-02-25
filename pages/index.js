@@ -62,10 +62,11 @@ export default function Home() {
           <h1>Todo list</h1>
 
           <div style={{ marginTop: "30px" }}>
-            <ul>
+            <ul key={0}>
               {tasks.map((taskAtual) => {
                 return (
                   <ItemTask
+                    key={taskAtual.id}
                     taskAtual={taskAtual}
                     supabaseClient={supabaseClient}
                     setData={SetData}
@@ -83,6 +84,7 @@ export default function Home() {
             }}
           >
             <input
+              key={1}
               type="text"
               value={title}
               placeholder="Task todo"
@@ -98,6 +100,7 @@ export default function Home() {
               }}
             />
             <button
+              key={2}
               style={{
                 width: "70px",
                 height: "20px",
