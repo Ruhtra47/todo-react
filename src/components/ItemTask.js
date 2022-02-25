@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import deleteImage from "./delete.png";
-
 function ItemTask(props) {
   const [checked, setChecked] = React.useState(props.taskAtual.done);
 
